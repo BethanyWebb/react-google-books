@@ -18,7 +18,7 @@ app.use(routes);
 
 // Connect to the Mongo DB
 mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://localhost:27017/?readPreference=primary&appname=MongoDB%20Compass%20Community&ssl=false",
+  process.env.MONGODB_URI || "mongodb://localhost:27017",
   {
     useCreateIndex: true,
     useNewUrlParser: true
